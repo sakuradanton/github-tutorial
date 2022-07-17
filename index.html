@@ -1,56 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-widht,
         initial-scale=1.0" />
         <meta name="description" content="Изучение основ HTML5 для новичков" />
         <title>My Github tutorial</title>
         <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-    <h1>Это шапка сайта</h1>
-    <article>
-      <h1>Эта строка была написана с тэгом h1</h1>
-          <h1>Кратко о парных тегах</h1>
-      <p>
-          Большинство тегов парные. Их контент заключён между открывающим и
-          закрывающим тегом.
-      </p>
-          <h1>
-            <a href="https://open.spotify.com/" target="_blank" title="Тест ссылки">Spotify</a> - сервис <em>прослушивания</em> музыки.
-          </h1>
-      <p>
-        <em>прослушивания</em> - работа тэга em
-      </p>  
-      <p>
-        Преимущества
-      </p>
-          <ul>
-            <li>Работает в браузере</li>
-            <li>Не грузит систему</li>
-            <li>Удобный интерфейс</li>
-          </ul>
-      <p>
-            Работа тэгов ul и li
-      </p>
-      <p>
-      <img 
-      src="./img/anime.jpg"
-      alt="Anime"
-      />
-      </p>
-      <a href="https://uk.wikipedia.org/wiki/%D0%91%D1%96%D0%BB%D0%BB%D1%96_%D0%93%D0%B5%D1%80%D1%80%D1%96%D0%BD%D2%91%D1%82%D0%BE%D0%BD" target="_blank">
-      <img 
-      src="./img/billy.png"
-      alt="Billy Herrington"
-      />
+  </head>
+  <body>
+    <header>
+      <!-- The logo is always a link-->
+      <a href="/">
+        <img
+        src="https://www.flaticon.com/svg/static/icons/svg/616/616475.svg"
+        alt="Webstudio logo" width="32" />
+        Mango.dev
       </a>
-  
-      </article>
-    <a href="https://discord.gg/K8By3JfM" target="_blank" title="Тест ссылки">
-        Discord
-    </a>
-    <p>Тэг a=address=линк с описанием, если добавить аттрибут title</p>
-</body>
-</html>
+
+      <!-- Main navigation -->
+      <nav>
+        <!-- Links to other pages or sections of the current page -->
+        <ul>
+          <li><a href="https://www.youtube.com/" target="_blank" >Youtube</a></li>
+          <li><a href="https://www.youtube.com/watch?v=07TdV09rgv0&ab_channel=GoIT" target="_blank" >GoItVideo</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Unique page content -->
+    <main>
+      <!-- Features section -->
+      <section>
+        <h2>Features</h2>
+
+        <ul>
+          <li>
+            <img src="./img/anime.jpg"
+            alt="Billy Herrington" width="320" />
+            <h3>Experience</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              repellendus voluptates sequi natus accusantium adipisci ratione
+              laborum sunt, modi nemo?
+            </p>
+          </li>
+          <li>
+            <img src="./img/anime2.jpg"
+            alt="Anime" width="320" />
+            <h3>Technology stack</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              repellendus voluptates sequi natus accusantium adipisci ratione
+              laborum sunt, modi nemo?
+            </p>
+          </li>
+          <li>
+            <img src="./img/anime3.jpg"
+            alt="Anime" width="320" />
+            <h3>Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              repellendus voluptates sequi natus accusantium adipisci ratione
+              laborum sunt, modi nemo?
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Technology stack section -->
+      <section>
+        <h2>Our technology stack</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Page footer -->
+    <footer>
+      <p>All rights reserved &copy;mango.dev</p>
+      <ul>
+        <li><a href="https://www.instagram.com/goit.ua/">Instagram</a></li>
+        <li><a href="https://goit.ua/">Website</a></li>
+      </ul>
+
+      <button type="button">Request a call back</button>
+    </footer>
+  </body>
